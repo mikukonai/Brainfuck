@@ -1,6 +1,6 @@
 # Brainfuck
 
-使用Racket实现的简单Brainfuck解释器。
+使用Racket实现的简单Brainfuck解释器。  
 A simple Brainfuck interpreter written in Racket Scheme.
 
 本来是λ演算的学习笔记，后来为了证明λ演算的图灵完备性，干脆从丘奇编码出发，实现了一个Brainfuck解释器。
