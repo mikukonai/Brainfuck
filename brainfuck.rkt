@@ -1,5 +1,13 @@
 #lang racket
 
+; A simple Brainfuck interpreter
+; 简单的Brainfuck解释器
+;
+; 2017.11.14 Mikukonai
+; https://github.com/mikukonai
+;
+; 说明：使用了丘奇编码(https://en.wikipedia.org/wiki/Church_encoding)，从无到有构造解释器。
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; 布尔值
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -751,6 +759,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Brainfuck初始环境，含数据初值和代码
+; 程序意义：计算逻辑地址0和1位置两个数字的和，并将结果保存在1位置。
 ;                 DP       CP                 MEMORY(TAPE)
 (define env (CONS @0 (CONS @2 (STR_TO_LAMBDA "23[->+<]$"))))
 
